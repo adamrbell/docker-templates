@@ -6,7 +6,7 @@
   <Date>2016-05-28</Date> 
   <Support>https://lime-technology.com/forum/index.php?topic=48814.0</Support>
   <Overview>RetroShare running on Hurricane's excellent web remote desktop</Overview>
-  <Description>On first run you will need to create a pgp key and associated identity. This key is stored in /nobody/.retroshare/ To ensure your identity persists across reboots the /nobody/.retroshare/ folder should be exported to your array or cache.</Description>
+  <Description>On first run the wizard will create a pgp key and associated identity. This key (and all config files) are stored in /nobody/.retroshare/ To ensure your identity persists across reboots the /nobody/.retroshare/ folder should be exported to your cache drive (or array).</Description>
   <Registry>https://hub.docker.com/r/adamrbell/desktop-docker-retroshare/</Registry>
   <Repository>adamrbell/desktop-docker-retroshare</Repository>
   <BindTime>true</BindTime>
