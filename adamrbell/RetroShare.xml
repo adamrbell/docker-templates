@@ -36,7 +36,7 @@
       <Volume>
       <HostDir></HostDir>
       <ContainerDir>/media</ContainerDir>
-      <Mode>r</Mode>
+      <Mode>ro</Mode>
     </Volume>
   </Data>
   <WebUI></WebUI>
