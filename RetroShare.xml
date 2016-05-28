@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>RetroShare-xrdp</Name>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Date>2016-05-28</Date> 
+  <Support>https://lime-technology.com/forum/index.php?topic=48814.0</Support>
+  <Overview>RetroShare running on Hurricane's excellent web remote desktop</Overview>
+  <Description>On first run you will need to create a pgp key and associated identity. This key is stored in /nobody/.retroshare/ To ensure your identity persists across reboots the /nobody/.retroshare/ folder should be exported to your array or cache.</Description>
+  <Registry>https://hub.docker.com/r/adamrbell/desktop-docker-retroshare/</Registry>
+  <Repository>adamrbell/desktop-docker-retroshare</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+        <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>9090</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+   <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/nobody/.retroshare/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+      <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>r</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner>https://retroshareteam.files.wordpress.com/2014/12/retroshare-blog-header.png</Banner>
+  <Icon>http://retroshare.sourceforge.net/img/retroshare-symbol.png</Icon>
+</Container>
