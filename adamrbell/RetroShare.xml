@@ -33,7 +33,12 @@
       <ContainerDir>/nobody/.retroshare/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-      <Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
       <HostDir></HostDir>
       <ContainerDir>/media</ContainerDir>
       <Mode>ro</Mode>
